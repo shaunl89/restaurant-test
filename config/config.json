@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "shaun",
+    "password": null,
+    "database": "2359restaurant_development",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "shaun",
+    "password": null,
+    "database": "2359restaurant_test",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "shaun",
+    "password": null,
+    "database": "2359restaurant_production",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  }
+}
