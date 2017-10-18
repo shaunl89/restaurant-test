@@ -1,0 +1,20 @@
+<form class="" action="/admin/dish/{{dishes.id}}?_method=PATCH" method="post">
+  <div class="dishesCreate">
+    <label>Name:</label>
+    <input type="text" name="dish[name]" value="{{dishes.name}}"/>
+
+    <label>Description:</label>
+    <textarea type="text" name="dish[description]">{{dishes.description}}</textarea>
+
+    <label>Image:</label>
+    <input type="text" name="dish[image]" value="{{dishes.image}}">
+
+    <label>Price:</label>
+    <input type="text" name="dish[price]" value="{{dishes.price}}">
+
+    <label>Duration:</label>
+    <input type="text" name="dish[duration]" value="{{dishes.duration}}">
+
+    <button>Update</button>
+  </div>
+</form>

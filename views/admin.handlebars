@@ -1,0 +1,57 @@
+<h1>Hello Admin</h1>
+
+<h2>Create a Dish</h2>
+<form class="" action="/admin/dish" method="post">
+
+  <div class="dishesCreate">
+    <label>Name:</label>
+    <input type="text" name="dish[name]">
+
+    <label>Description:</label>
+    <textarea type="text" name="dish[description]"></textarea>
+
+    <label>Image:</label>
+    <input type="text" name="dish[image]">
+
+    <label>Price:</label>
+    <input type="text" name="dish[price]">
+
+    <label>Duration:</label>
+    <input type="text" name="dish[duration]">
+
+    <button>Create</button>
+  </div>
+</form>
+
+<h2>Dishes:</h2>
+<div class="dishesShow">
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Image</th>
+      <th>Price</th>
+      <th>Duration</th>
+    </tr>
+
+    {{#each dishes as |dish|}}
+      <tr>
+        <td>{{ dish.name }}</td>
+        <td>{{ dish.description }}</td>
+        <td>{{ dish.image }}</td>
+        <td>{{ dish.price }}</td>
+        <td>{{ dish.duration }}</td>
+
+        <td>
+          <a href="/admin/dish/{{dish.id}}">Edit</a>
+        </td>
+
+        <td>
+          <form action="/admin/dish/{{dish.id}}?_method=DELETE" method="post">
+            <button>Delete</button>
+          </form>
+        </td>
+      </tr>
+    {{/each}}
+  </table>
+</div>
