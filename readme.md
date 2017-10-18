@@ -64,11 +64,12 @@ Sample Request:
 	"name": "John",
 	"tableNumber": 2,
 	"pax": 4
-}```
+}
+```
 
-2) View Restaurant Dishes `GET localhost:3000/api/customer/dish`
+2) View Restaurant Dishes ``GET localhost:3000/api/customer/dish``
 
-3) Make an Order `POST localhost:3000/api/order`
+3) Make an Order ``POST localhost:3000/api/order``
 
 Sample Request:
 ```
